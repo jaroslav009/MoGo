@@ -1,0 +1,641 @@
+@import 'fonts.sass'
+@import 'vars.sass'
+
+html
+	overflow-x: hidden
+
+.s-general
+	padding: 50px 0px
+
+.header
+	background-image: url("../img/header.png")
+	padding: 30px 0
+	background-position: center
+	background-size: cover
+
+.top_head
+	display: flex
+	flex-direction: row
+	width: 120%
+.logo
+	color: #fff
+	font-family: 'Montserrat-Bold'
+	font-size: 30px
+	width: 100px
+	position: absolute
+	
+.top_mnu
+	margin-bottom: 200px
+	margin-top: 10px
+	li 
+		display: inline-block
+		list-style-type: none
+		margin-right: 50px
+		i 
+			font-family: 'font-awesome'
+		a 
+			font-family: 'Montserrat-Regular'
+			font-size: 14px
+			text-transform: uppercase
+			color: #fff
+			padding-bottom: 2px
+			text-decoration: none
+			&:hover
+				color: #fce38a
+				border-bottom: 2px solid #fce38a
+				transition: all .3s ease
+		.item_mnu
+			&:hover
+				border-bottom: none
+.title_head
+	text-align: center
+	color: #fff
+	text-transform: uppercase
+	h2
+		font-family: 'KaushanScript-Regular'
+		font-size: 72px
+	h1
+		font-family: 'Montserrat-Bold'
+		font-size: 150px
+	hr
+		width: 50px
+
+.btn
+	border: 2px solid #fff
+	font-size: 14px
+	font-family: 'Montserrat-Bold'
+	background-color: none
+	color: #fff
+	&:hover
+		color: #fff
+		border: 2px solid #fce38a
+		transition: all .5s
+		
+.title-sect
+	text-align: center
+	color: $black
+	h3
+		font-family: 'KaushanScript-Regular'
+		font-size: 24px
+	h2
+		font-family: 'Montserrat-Bold'
+		font-size: 30px
+		text-transform: uppercase
+		margin-bottom: 40px
+	.line-title
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: center
+.line 
+	border-top: 3px solid #f38181
+	width: 60px
+
+
+.s-about
+	p 
+		font-family: 'Montserrat-Regular'
+		font-size: 15px
+		color: #999
+		text-align: center
+		margin-top: 50px
+		margin-bottom: 100px
+
+.cont-about
+	display: none
+
+.img-about
+	position: relative
+	cursor: pointer
+	width: 380px
+	height: 250px
+	background-position: center
+	background-size: cover
+	margin: 0 auto
+	margin-bottom: 20px
+	&:hover
+		.color
+			transition: all 1s
+			background-image: linear-gradient(to bottom right, #f2928c, #f1da36)
+			box-shadow: 5px 5px $green
+			cursor: pointer
+			position: absolute
+			opacity: .8
+			width: 380px
+			height: 250px
+		.cont-about
+			display: block
+			cursor: pointer
+			z-index: 100
+			position: relative
+			padding-top: 30%
+			ul
+				margin: 0 auto
+				vertical-align: middle
+				text-align: center
+				li 
+					list-style-type: none
+					text-transform: uppercase
+					color: #fff
+					font-family: 'Montserrat-Bold'
+					margin-top: 5px
+					display: block
+
+.advantages
+	background-color: $green
+	margin-top: 120px
+	width: 100%
+	.list-advantages
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: center
+		.list
+			width: 100%
+			border-left: 1px solid #b5eae0
+			max-height: 270px
+			padding: 50px 50px
+			text-align: center
+			display: inline-block
+			color: #fff
+			&:last-child
+				border-right: 1px solid #b5eae0
+			h2
+				padding: 0
+				font-size: 72px
+				font-family: 'Montserrat-Bold'
+			span
+				font-size: 14px
+				font-family: 'Montserrat-Regular'
+
+.service-item
+	display: flex
+	margin-top: 80px
+	img
+		width: 35px
+		height: 35px
+	.block-service-cont
+		margin-left: 20px
+		span
+			font-family: 'Montserrat-Regular'
+			font-size: 18px
+			text-align: center
+			margin-bottom: 50px
+			text-transform: uppercase
+		p
+			color: #999
+			margin-top: 10px
+			font-family: 'Montserrat-Regular'
+		
+.s-feature
+	background-position: center
+	background-size: cover
+	padding-bottom: 0
+	.table
+		margin: 0
+		padding: 0
+		margin-top: 100px
+		height: 580px
+		width: 470px
+		position: relative
+		left: 0
+
+	.white
+		position: absolute
+		height: 460px
+		left: 70%
+		margin-top: 380px
+img:hover
+	opacity: 1
+
+.s-work
+	position: relative
+	p 
+		color: #999
+		text-align: center
+		margin-top: 46px
+		margin-bottom: 46px
+.item-work
+	border: 1px solid #e5e5e5
+	padding: 15px
+	position: relative
+	width: 430px
+	margin-left: 20px
+	margin-top: 20px
+	.img-work
+		width: 430px
+		padding-right: 410px
+		position: relative
+		img
+			width: 30px
+			height: 30px
+		span
+			font-family: 'Montserrat-Regular'
+			font-size: 14px
+			text-transform: uppercase
+			position: absolute
+			top: 5px
+			left: 45px
+		i
+			align-self: flex-end
+			color: #999
+			position: absolute
+			font-size: 30px
+			cursor: pointer
+			right: 30px
+			top: 0px
+	.cont-work, .cont-work2, .cont-work3
+		p
+			text-align: left
+			overflow: scroll
+			height: 180px
+			width: 400px
+			font-family: 'Montserrat-Regular'
+			font-size: 15px
+.carousel
+	background-color: #f8f8f8
+	padding: 50px 50px
+	margin-top: 115px
+.owl-carousel
+	.item
+		display: flex
+		flex-direction: row
+		justify-content: center
+		img
+			margin-top: 50px
+			width: 60px
+			height: 60px
+			border: 2px solid #95e1d3
+			padding: 10px 
+		.cont-item
+			width: 760px
+			margin-left: 20px
+			p 
+				text-align: left
+				margin-left: 10px
+				color: #999
+				font-family: 'Montserrat-LightItalic'
+			.line-item
+				display: flex
+				flex-direction: row
+				margin-top: 20px
+				p 
+					margin-top: -10px
+					font-family: 'KaushanScript-Regular'
+					margin-left: 10px
+					color: #000
+				.line 
+					border-top: 3px solid #f38181
+					width: 60px
+					margin-left: 10px
+
+	.owl-nav
+		position: absolute
+		top: 50px
+		width: 100%
+		> div
+			width: 64px
+			height: 64px
+			text-align: center
+			font-size: 40px
+	.owl-prev
+		position: absolute
+	.owl-next
+		position: absolute
+		right: 0
+
+.s-team
+	p
+		margin-top: 40px
+		color: #999
+		text-align: center
+	.item-team
+		&:hover
+			transition: all .5s ease
+			cursor: pointer
+		.img-team
+			height: 470px
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			.cont-item-team
+				display: none
+			&:hover
+				transition: all .5s ease
+				cursor: pointer
+				.color
+					transition: all 1s
+					height: 100%
+					width: 100%
+					opacity: .5
+					background-image: linear-gradient(to bottom right, #f2928c, #f1da36)
+					box-shadow: 5px 5px $green
+				.cont-item-team
+					text-align: center
+					display: block
+					position: relative
+					margin-top: -70%
+					width: 100%
+					ul
+						width: 90%
+						margin: 0 auto
+						position: absolute
+						li 
+							list-style-type: none
+							color: #f38181
+							background-color: #fce38a
+							width: 55px
+							height: 55px
+							display: inline-block
+							margin-right: -3px
+							&:hover
+								background-color: #f38181
+								color: #fff
+								transition: all .5s
+							i 
+								margin-top: 15px
+								font-size: 20px
+		.cont-item-team2
+			text-align: center
+			h2
+				font-size: 18px
+				font-family: 'Montserrat-Bold'
+			p 
+				color: #999
+				font-size: 15px
+				margin-top: 0
+				font-family: 'Montserrat-Regular'
+
+.logos
+	img
+		width: 100%
+		height: 120px
+
+		
+.s-galery
+	.item-galery
+		border: none
+	img
+		border: none
+		width: 292px
+		height: 300px
+	.img-galery
+		width: 292px
+		height: 300px
+		background-size: cover
+		background-position: center
+		&:hover
+			.color
+				transition: all 1s
+				background-image: linear-gradient(to bottom right, #f2928c, #f1da36)
+				cursor: pointer
+				position: absolute
+				opacity: .8
+				width: 292px
+				height: 300px
+			.cont-galery
+				text-align: center
+				padding-top: 40%
+				position: relative
+				display: block
+				cursor: pointer
+				text-decoration: none
+				span
+					text-transform: uppercase
+					color: #fff
+					font-family: 'Montserrat-Regular'
+					font-size: 14px
+					display: block
+					margin-top: 10px
+					margin-bottom: 0px
+				i
+					font-size: 30px
+					color: #fff
+				p 
+					font-family: 'Montserrat-LightItalic'
+					font-size: 15px
+					color: #fff
+					margin-top: 10px
+
+.s-galery
+	p 
+		text-align: center
+		color: #999
+		margin: 50px 0px
+	.cont-galery
+		display: none
+	.img-galery-height
+		height: 600px
+		&:hover
+			.color
+				height: 600px
+			.cont-galery
+				padding-top: 80%
+
+
+// Comments
+
+.s-comments
+	background-color: #FFF
+	.carousel
+		background-color: #fff
+		img
+			border: none
+			width: 100px
+			height: 100px
+			margin-top: 0
+		p 
+			color: #999
+			font-family: 'Montserrat-LightItalic'
+
+.s-quote
+	background-position: center
+	background-size: cover
+	padding-bottom: 0px
+
+.people
+	width: 100%
+	margin-top: 90px
+
+.item-people
+	position: relative
+	margin-bottom: 50px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	.img-people
+		width: 80px
+		height: 80px
+		background-position: center
+		background-size: cover
+		margin-right: 40px
+
+	.cont-people
+		width: 300px
+		text-align: left
+
+		span
+			font-family: 'Montserrat-Bold'
+			font-size: 18px
+			text-transform: uppercase
+		p 
+			font-size: 15px
+			margin-top: 10px
+			font-family: 'Montserrat-LightItalic'
+			color: #999
+.item-blog
+	margin-top: 50px
+
+.img-blog
+	width: 100%
+	height: 100px
+	margin-bottom: 30px
+	position: relative
+	height: 240px
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	.img-number
+		border-radius: 5px
+		position: absolute
+		bottom: 10px
+		left: -10px
+		background-color: $green
+		font-size: 30px
+		font-family: 'Montserrat-Bold'
+		color: #fff
+		line-height: 1
+		padding: 5px 10px
+		p 
+			font-size: 15px
+			font-family: 'Montserrat-LightItalic'
+			margin-top: 0
+
+
+.cont-blog
+	text-align: left
+	span
+		font-size: 14px
+		text-transform: uppercase
+		font-family: 'Montserrat-Bold'
+	p 
+		color: #999
+		font-size: 14px
+		font-family: 'Montserrat-LightItalic'
+		border-bottom: 1px solid #e5e5e5
+		margin-top: 10px
+		padding-bottom: 15px
+	.viewers
+		.fa 
+			color: $green
+			margin-right: 10px
+			span
+				color: #999
+				font-family: 'Montserrat-LightItalic'
+
+.map
+	margin: 0 auto
+	color: #f38181
+	text-align: center
+	i 
+		font-size: 24px
+		font-family: 'font-awesome'
+	span
+		font-family: 'Montserrat-Bold'
+		font-size: 24px
+		display: block
+		text-transform: uppercase
+	.line
+		margin: 10px auto
+
+.cont-news
+	h2
+		color: #ccc
+		font-family: 'Montserrat-Bold'
+		font-size: 46px
+	p 
+		font-size: 15px
+		font-family: 'Montserrat-LightItalic'
+		color: #999
+	strong
+		font-size: 18px
+	span
+		font-size: 14px
+		font-family: 'Montserrat-Regular'
+	.line-cont-news
+		border-bottom: 1px solid #e5e5e5
+		margin: 19px 0
+	ul
+		margin-bottom: 19px
+		text-align: left
+		padding: 0
+		li 
+			list-style-type: none
+			margin-right: 15px
+			display: inline-block
+			i 
+				color: $green
+				font-size: 18px
+
+.form-news
+	input
+		display: inline-block
+		font-size: 15px
+		font-family: 'Montserrat-LightItalic'
+		padding: 13px
+		border: 1px solid #e7e7e7
+		margin: 0
+		height: 30px
+		width: 180px
+		border-right: none
+	.btn
+		background-color: $green
+		margin-left: -5px
+		margin-top: -3px
+		text-transform: uppercase
+		font-family: 'Montserrat-Bold'
+
+.s-map
+	background-position: center
+	background-size: cover
+
+.s-news
+	background-color: #f8f8f8
+
+.img-blogs
+	span
+		font-size: 12px
+		font-weight: bold
+		text-transform: uppercase
+		color: #333
+	.item	
+		width: 100%
+		margin-top: 40px
+		.img-blogs-cont
+			float: right
+			width: 230px
+		p 
+			font-size: 13px
+			font-family: 'Montserrat-LightItalic'
+			color: #999
+.instagram-news
+	span
+		font-size: 12px
+		font-weight: bold
+		text-transform: uppercase
+		color: #333
+		margin-bottom: 20px
+
+.img-container
+	margin-top: 3px
+
+.img-instagram
+	margin-top: 40px
+	p 
+		font-size: 13px
+		font-family: 'Montserrat-LightItalic'
+		color: #333
+		margin-top: 20px
+
+
+@import 'responsive.sass'
